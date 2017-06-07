@@ -1,0 +1,32 @@
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title" id="big_title">
+      <%= link_to 'EPC',root_path,class:"header_title" %>
+    </span>
+    <input id="vocalization" class="vocalization" type="text" placeholder="入力した単語を再生"></form>
+    <button class="vocalization_button mdl-js-button  mdl-button--colored">
+      <i class="material-icons  ">play_arrow</i>
+    </button>
+    <!-- userが存在するかの確認 -->
+    <div class="user_info">
+      <% if user_signed_in?  %>
+        <span class="current_user"><%= current_user.username %>さん</span>
+        <%= link_to 'LogOut', destroy_user_session_path, :method => 'delete',class:"mdl-button mdl-js-button mdl-button--raised login_button" %>
+      <% else %>
+        <%= link_to 'Login',new_user_session_path,class:"mdl-button mdl-js-button mdl-button--raised login_button" %>
+      <% end %>
+    </div>
+  </div>
+
+  <!-- <nav>
+    <% if user_signed_in? %>
+      <%= link_to 'ProfileEdit', edit_user_registration_path %>
+      <%= current_user.username %>
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to 'Signup', new_user_registration_path %>
+      <%= link_to 'Login', new_user_session_path %>
+    <% end %>
+  </nav> -->
+
+</header>

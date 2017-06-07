@@ -1,1 +1,23 @@
-This is flashcards/show Page!
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">ChooseCards</span>
+  <nav class="mdl-navigation">
+  <% if @card_files.present? %>
+    <% for card_file in @card_files %>
+      <a class="mdl-navigation__link" href="#" onClick="findCards('<%= card_file.name %>')">
+        <%= card_file.name %>
+      </a>
+    <% end %>
+  <% end %>
+  <div id="import_file">
+  </div>
+  </nav>
+</div>
+<main class="mdl-layout__content">
+  <div class="page-content"></div>
+  <!-- スナックバー用コンテナ-->
+  <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+    <div class="mdl-snackbar__text"></div>
+    <button class="mdl-snackbar__action" type="button"></button>
+  </div>
+</main>
+<%= link_to 'Back', root_path,class:'back_button mdl-button mdl-js-button mdl-button--primary' %>

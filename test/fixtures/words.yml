@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  English: MyString
+  Japanese: MyString
+  weak: false
+
+two:
+  English: MyString
+  Japanese: MyString
+  weak: false

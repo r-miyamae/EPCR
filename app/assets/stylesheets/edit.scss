@@ -1,0 +1,44 @@
+.editing_button{
+  width: 50px;
+  height: 25px;
+  padding-top: 2px;
+  text-align: center;
+  position:relative; bottom: 4px;
+  float: right;
+  margin-right: 5px;
+  border: solid 1px #7b68ee;
+  border-radius: 5px;
+  background-color: #3f51b5;
+  color: #fff;
+  text-decoration: none;
+}
+.editing_button_edit{
+  height: 20px;
+  padding-top: 4px;
+}
+.edit_title{
+  text-align: center;
+}
+.file_list{
+  width: 60%;
+
+}
+.list_color{
+  background-color: #f3f3f3;
+}
+.list_non_color{
+  background-color: white;
+}
+.file_list li{
+  height: 25px;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.editing_field ul{
+  width: 80%;
+  background-color: lightgreen;
+  padding: 20px 5% 20px 5%;
+}
+.editing_button_download{
+  width: 80px;
+}
